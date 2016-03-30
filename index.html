@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="videoApp">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Guitar Store</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="store">
+    <meta name="description" content="angular store of Tower">
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+</head>
+    
+    
+<body >
+    
+    
+   <div class="container"  ng-controller="mainCtrl" >
+    
+       
+       
+       <div class="row">
+       
+        <div class="col-md-3 col-sm-4" ng-repeat="x in products">
+           
+            <h3>{{x.name}}</h3>   
+            <img ng-src="{{x.image}}" width="200px" height="150x">
+            
+            <p>{{x.description}}</p>
+           
+        </div>
+       
+       
+       </div>
+        
+    
+    
+    </div>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+</body>    
+
+</html>
